@@ -81,6 +81,7 @@ main:hover{
 
 span{
     text-align: justify;
+    display:block;  /*para que me tome la alineacion justificada*/
 }
 
 h1{
