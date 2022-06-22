@@ -79,7 +79,7 @@ ul{
 /* Media queries */
 
 
-@media (max-width: 800px){
+@media (max-width: 550px){
 
     .nav-logo{
         width: 80px;
