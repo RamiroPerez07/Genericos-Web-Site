@@ -76,4 +76,43 @@ ul{
 }
 
 
+/* Media queries */
+
+
+@media (max-width: 800px){
+
+    .nav-logo{
+        width: 80px;
+        box-shadow: 0px 0px 1px 2px #ffffff;
+        border-radius: 2px;
+        margin:auto;
+    }    
+
+    .nav-main{
+        font-size: 15px;
+        display:flex;
+        justify-content:start;
+        align-items:flex-start;
+        flex-direction: column;
+        height: auto;
+        background-color: #333232;
+        border-radius: 5px;
+    }
+
+    .nav-main ul li{
+        padding: 10px 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .nav-main ul {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .nav-menu{
+        margin-top: 15px;
+    }
+}
 
