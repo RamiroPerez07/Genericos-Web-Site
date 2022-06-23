@@ -53,6 +53,8 @@ ul{
     border-radius: 2px;
 }
 
+
+
 /* Nav - words and search-button */
 
 .nav-main ul {
@@ -175,6 +177,11 @@ ul{
 
     .business-name{
         font-size: 20px;
+    }
+
+    .home{
+        display: block;
+        margin:auto;
     }
 }
 
