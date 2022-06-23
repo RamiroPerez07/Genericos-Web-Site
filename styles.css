@@ -21,13 +21,26 @@ ul{
 }
 
 
+
+
+
 /* Clases */
 
+
+/* Contenedor principal del documento. Se utiliza para definir los margenes */
 .container{
     width: 90%;
     margin: auto;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
+
+
+
+
+
+
+
 
 
 /*Nav Bar*/
@@ -64,8 +77,8 @@ ul{
 
 .nav-main ul li{
     padding: 10px 0;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .nav-main ul li a{
@@ -75,6 +88,39 @@ ul{
 .nav-main ul li a:hover{
     border-bottom: 2px solid #ffffff;
 }
+
+
+/* Burguer Menu */
+.menu-burguer-btn{
+    color:white;
+    z-index:2;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.menu-burguer-btn{
+    order:3;
+}
+
+.check-toggle{
+    display: none;
+}
+
+.check-toggle:checked ~ .nav-menu{
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: #333232;
+    height: 100%;
+    opacity: 0.95;
+    padding:30px;
+    transform: translate(-5px);
+}
+
+
+
+
 
 /* Main Info section */
 
@@ -136,10 +182,39 @@ ul{
 }
 
 
+
+
 /* Media queries */
 
 
 @media (max-width: 800px){
+
+
+    /* Burguer Menu*/
+
+    .nav-menu{
+        display:none !important;
+    }
+
+    .check-toggle:checked ~ .nav-menu{
+        display: block !important;
+        position: absolute;
+        top:0;
+        left:0;
+        background-color: #333232;
+        height: 100%;
+        opacity: 0.95;
+        padding:30px;
+        transform: translate(-5px);
+    }
+    
+
+
+    .nav-main ul.nav-menu li{
+        padding: 20px;
+        border-bottom: #ccc solid 1px;
+        font-size: 18px;
+    }
 
     .nav-logo{
         width: 80px;
@@ -148,16 +223,7 @@ ul{
         margin:auto;
     }    
 
-    .nav-main{
-        font-size: 15px;
-        display:flex;
-        justify-content:start;
-        align-items:flex-start;
-        flex-direction: column;
-        height: auto;
-        background-color: #333232;
-        border-radius: 5px;
-    }
+
 
     .nav-main ul li{
         padding: 10px 0;
@@ -165,15 +231,7 @@ ul{
         margin-right: 10px;
     }
 
-    .nav-main ul {
-        display:flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
 
-    .nav-menu{
-        margin-top: 15px;
-    }
 
     .business-name{
         font-size: 20px;
