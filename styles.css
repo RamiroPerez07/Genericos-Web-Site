@@ -126,21 +126,22 @@ ul{
     width:100%;
     height:auto;
     margin-top: 30px;
+    margin-bottom: 30px;
     background-color: rgba(51, 50, 50,0.95);
     border-radius: 5px;
-    padding-top: 30px;
-    padding-bottom: 30px;
     display:flex;
     flex-direction: column;
 }
 
 
 .institutional{
-    height: 100%;
+    height: auto;
     width: 90%;
     background-color: #d4d4d4;
     border-radius: 5px;
     margin:auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 .business-name{
@@ -148,8 +149,7 @@ ul{
     letter-spacing: 1px;
     font-size: 30px;
     text-align: center;
-    padding: 20px 0;
-    margin: 0 20px;
+    margin:20px;
 }
 
 .institutional-presentation{
@@ -164,7 +164,7 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding: 0 20px 20px 20px;
+    margin: 0 20px 20px 20px;
 }
 
 .btn-products-view{
@@ -179,6 +179,45 @@ ul{
 .btn-products-view:hover{
     opacity: 0.92;
 }
+
+
+/* Mission and vision */
+.mission-and-vision{
+    height: auto;
+    width: 90%;
+    background-color: #d4d4d4;
+    border-radius: 5px;
+    margin:auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.mission-and-vision-title{
+    color: #ff7b00e1;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-align: left;
+    margin:20px;
+}
+
+.mission-and-vision ul{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mission-and-vision ul li{
+    text-align: justify;
+    list-style-type:disclosure-closed;
+    list-style-position: inside;
+}
+
+.mission-and-vision ul li:first-child{
+    margin-bottom: 10px;
+}
+
+
+
 
 
 
