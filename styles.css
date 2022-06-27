@@ -217,6 +217,31 @@ ul{
 }
 
 
+/* Contact footer */
+
+.contact-footer{
+    background-color: rgba(51, 50, 50,0.95);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-data{
+    margin: 15px;
+}
+
+
+.contact-footer ul li{
+    color: white;
+    list-style-type: none;
+    text-align: left;
+    font-size: 14px;
+    margin: 5px;
+}
+
 
 
 
