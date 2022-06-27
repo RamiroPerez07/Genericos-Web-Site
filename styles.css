@@ -201,7 +201,6 @@ ul{
 }
 
 .mission-and-vision ul{
-    margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -214,6 +213,24 @@ ul{
 
 .mission-and-vision ul li:first-child{
     margin-bottom: 10px;
+}
+
+/* Team photo */
+
+.photos-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 20px 20px 0 20px;
+}
+
+.photos-container img{
+    width: 100%;
+    max-width: 250px;
+    border-radius: 5px;
+    object-fit: contain;
+    margin-bottom: 20px;
 }
 
 
