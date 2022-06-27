@@ -36,17 +36,8 @@ ul{
 }
 
 
-
-
-
-
-
-
-
-/*Nav Bar*/
-
-.nav-main{
-    font-size: 18px;
+/*Header of the page*/
+.main-header{
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -55,8 +46,8 @@ ul{
     padding: 20px 15px;
     background-color: rgba(51, 50, 50,0.95);
     border-radius: 5px;
-    opacity: 0.95;
 }
+
 
 /* Img - logo */
 
@@ -67,25 +58,32 @@ ul{
 }
 
 
-
 /* Nav - words and search-button */
 
-.nav-main ul {
-    display:flex;
-    flex-wrap: wrap;
+.nav-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.nav-main ul li{
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.nav-menu li{
     padding: 10px 0;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.nav-main ul li a{
+.nav-menu li a{
     padding: 2px;
 }
 
-.nav-main ul li a:hover{
+.nav-menu li a:hover{
     border-bottom: 2px solid #ffffff;
 }
 
@@ -132,7 +130,6 @@ ul{
     border-radius: 5px;
     padding-top: 30px;
     padding-bottom: 30px;
-
     display:flex;
     flex-direction: column;
 }
@@ -160,6 +157,8 @@ ul{
     text-align: justify;
     margin: 0 20px 20px 20px;
 }
+
+/* Button position */
 
 .institutional div{
     display: flex;
@@ -210,7 +209,7 @@ ul{
     
 
 
-    .nav-main ul.nav-menu li{
+    .nav-menu li{
         padding: 20px;
         border-bottom: #ccc solid 1px;
         font-size: 18px;
@@ -225,13 +224,11 @@ ul{
 
 
 
-    .nav-main ul li{
+    .nav-menu li{
         padding: 10px 0;
         margin-left: 10px;
         margin-right: 10px;
     }
-
-
 
     .business-name{
         font-size: 20px;
