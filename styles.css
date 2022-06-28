@@ -1,3 +1,4 @@
+/* General Settings */
 *{
     margin:0;
     padding: 0;
@@ -31,8 +32,8 @@ ul{
 .container{
     width: 90%;
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 
@@ -43,7 +44,8 @@ ul{
     align-items: center;
     flex-wrap: wrap;
     height: auto;
-    padding: 20px 15px;
+    margin:auto;
+    padding: 20px 40px;
     background-color: rgba(51, 50, 50,0.95);
     border-radius: 5px;
 }
@@ -55,6 +57,10 @@ ul{
     width: 80px;
     box-shadow: 0px 0px 1px 2px #ffffff;
     border-radius: 2px;
+}
+
+.home{
+    margin-left: 25px;
 }
 
 
@@ -84,7 +90,8 @@ ul{
 }
 
 .nav-menu li a:hover{
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #ff7b00e1;
+    color: #ff7b00e1;
 }
 
 
@@ -94,6 +101,7 @@ ul{
     z-index:2;
     font-size: 0.9rem;
     cursor: pointer;
+    display:none;
 }
 
 .menu-burguer-btn{
@@ -102,18 +110,6 @@ ul{
 
 .check-toggle{
     display: none;
-}
-
-.check-toggle:checked ~ .nav-menu{
-    display: block;
-    position: absolute;
-    top:0;
-    left:0;
-    background-color: #333232;
-    height: 100%;
-    opacity: 0.95;
-    padding:30px;
-    transform: translate(-5px);
 }
 
 
@@ -264,6 +260,8 @@ ul{
 
 
 
+
+
 /* Media queries */
 
 
@@ -272,29 +270,40 @@ ul{
 
     /* Burguer Menu*/
 
+    .menu-burguer-btn{
+        display: block;
+    }
+
     .nav-menu{
-        display:none !important;
-    }
-
-    .check-toggle:checked ~ .nav-menu{
-        display: block !important;
-        position: absolute;
-        top:0;
-        left:0;
-        background-color: #333232;
+        display: block;
+        position: fixed;
+        width: 45%;
         height: 100%;
-        opacity: 0.95;
-        padding:30px;
-        transform: translate(-5px);
+        top:0px;
+        left: -100%;
+        transition: all .5s;
+        background-color: rgba(51, 50, 50,0.95);
     }
-    
-
 
     .nav-menu li{
-        padding: 20px;
+        display: block;
         border-bottom: #ccc solid 1px;
         font-size: 18px;
+        padding: 10px 0;
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-right: 30px;
     }
+
+    .nav-menu li a{
+        font-size: 17px;
+    }
+
+
+    .check-toggle:checked ~ .nav-menu{
+        left:0;
+    }
+    
 
     .nav-logo{
         width: 80px;
@@ -303,13 +312,6 @@ ul{
         margin:auto;
     }    
 
-
-
-    .nav-menu li{
-        padding: 10px 0;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
 
     .business-name{
         font-size: 20px;
