@@ -18,16 +18,19 @@
 
     <div class="container">
         <header class="main-header">
-            <a class="home" href="#"><img src="./img/logo-genericos.jpg" alt="Logo genericos" class="nav-logo"/></a>
-    
+
+            <div class="nav-subcontainer">
+                <a class="home" href="#"><img src="./img/logo-genericos.jpg" alt="Logo genericos" class="nav-logo"/></a>
+                
+                <!--Menu burguer-->
+        
+                <label for="check-toggle" class="menu-burguer-btn"><i class="fas fa-bars fa-2x"></i></label>
+                
+            
+            </div>
             <nav class="nav-main">
 
-                
-            <!--Menu burguer-->
-    
-                <label for="check-toggle" class="menu-burguer-btn"><i class="fas fa-bars fa-2x"></i></label>
                 <input type="checkbox" id="check-toggle" class="check-toggle"/>
-            
     
                 <ul class="nav-menu">
                     <li>
@@ -42,15 +45,13 @@
                     <li>
                         <a href="#">Contacto</a>
                     </li>
-                    <li>
-                        <a href="#">Buscar 
-                            <i class="fas fa-search fa-xs"></i>
-                        </a>
-                    </li>
                 </ul>
-    
-    
-    
+
+                <form class="nav-search">
+                    <input type="text" placeholder="Nueva búsqueda"/>
+                    <button id="btn-main-search" type="submit"><i class="fas fa-search"></i></button>
+
+                </form>
             </nav>
     
         </header>
@@ -97,6 +98,6 @@
             <li><i class="fa-solid fa-location-dot"></i> Av. Falcón 391</li>
         </ul>
     </footer>
-
+    <script src="./main.js"></script>
 </body>
 </html>
