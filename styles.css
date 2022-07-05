@@ -239,7 +239,7 @@ ul{
 }
 
 .btn-products-view{
-    background-color: #333232;
+    background-color: #0d043a;
     color:#ffffff;
     padding: 8px;
     border-radius: 5px;
@@ -254,7 +254,7 @@ ul{
 }
 
 .btn-contact-view{
-    background-color: #333232;
+    background-color: #0d043a;
     color:#ffffff;
     padding: 8px;
     border-radius: 5px;
@@ -283,7 +283,7 @@ ul{
 .mission-and-vision-title{
     color: #ff7b00e1;
     letter-spacing: 1px;
-    font-size: 18px;
+    font-size: 24px;
     text-align: left;
     margin:20px;
 }
@@ -356,7 +356,7 @@ ul{
 /* Media queries */
 
 
-@media (max-width: 1035px){
+@media (max-width: 1050px){
 
     .main-header{
         flex-direction: column;
@@ -457,6 +457,36 @@ ul{
         max-width: 600px;
     }
 
+
+    /* Contact Form */
+
+    .input-map-container{
+        flex-direction: column;
+        align-items: stretch !important;
+
+    }
+
+    .form-inputs-container{
+        margin: 0 20px 20px 20px !important;
+        width:auto !important;
+    }
+
+    .form-inputs-container textarea{
+        min-width: 0 !important;
+    }
+
+    .location-map{
+        align-self: stretch !important;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto !important;
+    }
+
+    .form-btn-container{
+        margin-bottom: 0 !important;
+    }
+
+
 }
 
 
@@ -473,6 +503,12 @@ ul{
         margin-top:20px !important;
     }
 
+    /* contact form buttons */
+
+    .form-inputs-container input{
+        width: 100% !important;
+    }
+
 }
 
 @media (max-width:426px){
@@ -484,6 +520,8 @@ ul{
     .nav-subcontainer{
         justify-content: space-around;
     }
+
+
 }
 
 
@@ -532,6 +570,16 @@ ul{
 
     .contact-footer ul li{
         font-size: 12px;
+    }
+
+    /* Contact Buttons */
+    .form-btn-container{
+        flex-direction: column;
+    }
+
+    .btn-send-questions{
+        margin-right: 0 !important;
+        margin-bottom: 20px;
     }
 
 }

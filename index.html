@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
     <!--CUSTOM CSS-->
     <link rel="stylesheet" href="styles.css"/>
+    <!-- FORM STYLE CSS-->
+    <link rel="stylesheet" href="form-contact-style.css">
 </head>
 <body>
 
@@ -43,7 +45,7 @@
                         <a href="#">Take Away</a>
                     </li>
                     <li>
-                        <a href="#">Contacto</a>
+                        <a href="#contact-form">Contacto</a>
                     </li>
                 </ul>
 
@@ -87,6 +89,30 @@
                 
             </section>
         </main>
+
+        <section class="contact-form-container">
+            <form class="contact-form" id="contact-form">
+                <h2>Contacto</h2>
+                <div class="input-map-container">
+                    <div class="form-inputs-container">
+                        <input type="text" placeholder="Nombre"/>
+                        <input type="text" placeholder="Apellido"/>
+                        <input type="text" placeholder="Compañia"/>
+                        <input type="tel" placeholder="Teléfono"/>
+                        <input required type="email" placeholder="Correo electrónico"/>
+                        <textarea required autocapitalize="sentences" name="comentario" placeholder="Escribenos tus comentarios"></textarea>
+                        <div class="form-btn-container">
+                            <a href="#contact-form"><button type="submit" class="btn-send-questions">Enviar</button></a>
+                            <a href="#contact-form"><button type="reset" class="btn-clean-form">Limpiar</button></a>
+                        </div>
+                    </div>
+                    <iframe class="location-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5605.769918746588!2d-60.21675262887444!3d-33.339443860003584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b76788cc617bab%3A0xba5a00484cb5d953!2sDrogueria%20Genericos%20San%20Nicolas!5e0!3m2!1ses!2sar!4v1656963165930!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                
+
+            </form>
+        </section>
 
     </div>
 
