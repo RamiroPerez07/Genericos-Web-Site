@@ -577,7 +577,7 @@ ul{
         flex-direction: column;
     }
 
-    .btn-send-questions{
+    .form-btn-container a{
         margin-right: 0 !important;
         margin-bottom: 20px;
     }
