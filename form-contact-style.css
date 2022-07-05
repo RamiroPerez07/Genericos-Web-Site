@@ -70,10 +70,24 @@
 }
 
 
-
 .form-inputs-container input::placeholder,textarea::placeholder{
     color: #414141;
     font-weight: 300;
+}
+
+.form-inputs-container input:valid, textarea:valid{
+    box-shadow: 0px 0px 2px 0.1px #4ba700;
+    background-color: #b9da99;
+}
+
+.form-inputs-container input:invalid, textarea:invalid{
+    box-shadow: 0px 0px 2px 0.1px #ff0000;
+    background-color: #fac1c1;
+}
+
+.form-inputs-container input:placeholder-shown,textarea:placeholder-shown{
+    box-shadow: none;
+    background-color:#ffffff;
 }
 
 .form-inputs-container input:focus,textarea:focus{
