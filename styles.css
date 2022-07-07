@@ -180,7 +180,7 @@ ul{
     border-radius: 5px;
     cursor: pointer;
     transition-duration: 0.4s;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: var(--f_bold2);
 }
 
@@ -284,7 +284,7 @@ ul{
     border:none;
     cursor: pointer;
     transition-duration: 0.4s;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: var(--f_bold2);
 }
 
@@ -484,7 +484,7 @@ ul{
     border:none;
     cursor: pointer;
     transition-duration: 0.4s;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: var(--f_bold2);
 }
 
