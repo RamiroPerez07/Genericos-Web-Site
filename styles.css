@@ -241,6 +241,7 @@ ul{
 
 .team-photo-institutional{
     width:auto;
+    height: auto;
     margin:8px;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 2px var(--color1);
