@@ -233,7 +233,6 @@ ul{
 
 .right-institutional{
     width: 40%;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -245,7 +244,6 @@ ul{
     margin:8px;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 2px var(--color1);
-    object-fit: contain;
 }
 
 
