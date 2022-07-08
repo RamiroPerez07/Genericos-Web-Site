@@ -228,7 +228,7 @@ ul{
     width:60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .right-institutional{
