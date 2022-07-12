@@ -240,8 +240,8 @@ ul{
 }
 
 .team-photo-institutional{
-    width:auto;
-    margin:8px;
+    width:95%;
+    margin:auto;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 2px var(--color1);
 }
@@ -336,17 +336,17 @@ ul{
 /* Team photo */
 
 .photos-container{
-    width: auto;
-    height: 100%;
+    width: 98%;
+    margin:auto;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: stretch;
     flex-wrap: wrap;
-    margin: 20px 20px 0 20px;
+    margin-top: 20px;
 }
 
 .photos-container img{
-    width: auto;
+    width: 95%;
     margin:auto;
     max-width: 250px;
     border-radius: 5px;
@@ -388,6 +388,7 @@ ul{
 }
 
 .input-map-container{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -612,16 +613,13 @@ ul{
     }
 
     .right-institutional{
-        width:auto;
+        width:100%;
     }
 
     .left-institutional{
-        width:auto;
+        width:100%;
     }
 
-    .team-photo-institutional{
-        margin: 0 20px 20px 20px;
-    }
 
 
 
@@ -634,7 +632,7 @@ ul{
 
     .photos-container img{
         max-width: none;
-        margin: 0 0 20px 0;
+        margin-bottom: 20px;
     }
 
 
