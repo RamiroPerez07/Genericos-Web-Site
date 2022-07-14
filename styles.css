@@ -570,6 +570,111 @@ ul{
 
 
 
+/* Order's section-form */
+
+.product-commit-frame{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-commit-frame div{
+    width:90%;
+    margin:auto;
+    display: grid;
+    gap: 15px;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 30% 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.product-commit-frame .orders_buttons{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:30%;
+    flex-wrap: wrap;
+}
+
+.product-commit-frame div label{
+    color: var(--color0);
+    justify-self: center;
+    font-size: 0.9rem;
+}
+
+.product-commit-frame div.selected_product_units label{
+    color: var(--color5);
+}
+
+.product-commit-frame div.selected_product_units label::after{
+    content: " 🛒";
+}
+
+.product-commit-frame div input{
+    height: 30px;
+    width: 90%;
+    justify-self: start;
+    background-color: var(--color4);
+    color: white;
+    border-radius: 5px;
+    padding: 6px 8px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.9rem;
+    border-style: none;
+    font-weight: var(--thin4);
+}
+
+.product-commit-frame div.selected_product_units input{
+    background-color: var(--color7);
+    color: var(--color1);
+    font-weight: var(--f_bold1);
+}
+
+.product-commit-frame input::placeholder{
+    color:var(--color0);
+    font-weight: var(--f_thin5);
+}
+
+.product-commit-frame input:focus{
+    outline:none;
+    box-shadow: 0px 0px 5px 1px var(--color1);
+}
+
+.product-commit-frame div button{
+    height: auto;
+    width:auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 8px;
+    background-color: var(--color10);
+    color: var(--color0);
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-size: 0.8rem;
+    font-weight: var(--f_bold2);
+}
+
+.product-commit-frame div button:hover{
+    background-color: var(--color8);
+}
+
+.product-commit-frame div button:focus{
+    outline: none;
+    border:none;
+    box-shadow: none;
+    background-color: var(--color8);
+}
+
 
 
 
@@ -934,6 +1039,17 @@ ul{
     .form-inputs-container input{
         width: auto;
     }
+
+    /* Products order buttons */
+    .product-commit-frame div label{
+        font-size: 0.8rem;
+        font-weight: var(--f_thin3);
+    }
+
+    .product-commit-frame div input{
+        font-size: 0.8rem;
+    }
+
 
 }
 
