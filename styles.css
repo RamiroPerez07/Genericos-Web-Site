@@ -552,6 +552,7 @@ ul{
 
 .product-table-selection-container table thead{
     position: sticky;
+    z-index:1;
     top:0;
     background-color: var(--color1);
     color:var(--color0);
