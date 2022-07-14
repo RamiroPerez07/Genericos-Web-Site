@@ -45,6 +45,19 @@ ul{
 }
 
 
+/* Modulos */
+.amp-efect{
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+.amp-efect:hover{
+    transform: scale(1.05);
+}
+
+
+
+
 
 
 /* Clases */
@@ -1011,6 +1024,12 @@ ul{
 
     .form-btn-container{
         margin-bottom: 0;
+    }
+
+    /* Products button frame */
+
+    .product-commit-frame .orders_buttons{
+        flex-direction: column;
     }
 
 
