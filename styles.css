@@ -937,6 +937,7 @@ ul{
     .nav-menu{
         display: block;
         position: fixed;
+        z-index: 3;
         width: 45%;
         height: 100%;
         top:0px;
