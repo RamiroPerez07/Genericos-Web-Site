@@ -354,6 +354,252 @@ ul{
     box-shadow: 1px 1px 5px 2px var(--color1);
 }
 
+
+
+
+
+
+/* ####################################*/
+/* Formulario de seleccion de productos*/
+.product-selection-container{
+    width:100%;
+    height:auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: var(--color2);
+    border-radius: 5px;
+    display:flex;
+    flex-direction: column;
+}
+
+.product-search-container{
+    height: auto;
+    width: 90%;
+    background-color: var(--color2);
+    border-radius: 5px;
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-search-container h2{
+    color: var(--color5);
+    font-size: 2rem;
+    text-align: left;
+    margin:20px;
+    align-self: flex-start;
+}
+
+.product-search-frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin:auto;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/*button search product */
+
+.product-search-frame input{
+    height: 30px;
+    width: 80%;
+    background-color: var(--color4);
+    color: white;
+    border-radius: 5px;
+    padding: 6px 8px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    border-style: none;
+    font-weight: var(--thin4);
+}
+
+.product-search-frame input::placeholder{
+    color:var(--color0);
+    font-weight: var(--f_thin5);
+}
+
+.product-search-frame input:focus{
+    outline:none;
+    box-shadow: 0px 0px 5px 1px var(--color1);
+}
+
+.product-search-frame button{
+    margin-left: 1px;
+    height: 30px;
+    width:40px;
+    background-color: var(--color10);
+    color: var(--color0);
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-size: 0.8rem;
+    font-weight: var(--f_bold2);
+}
+
+.product-search-frame button:hover{
+    background-color: var(--color8);
+}
+
+.product-search-frame button:focus{
+    outline: none;
+    border:none;
+    box-shadow: none;
+    background-color: var(--color8);
+}
+
+
+/* Table */
+
+.product-table-selection-container{ /* table's container */
+    width: 90%;
+    margin:auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 300px;
+    background-color: var(--color3);
+    overflow: scroll;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 2px var(--color1);
+}
+
+/* Custom SCROLL BAR */
+.product-table-selection-container::-webkit-scrollbar{
+    display: block;
+    width: 12px;
+    height: 12px;
+}
+
+.product-table-selection-container::-webkit-scrollbar-track {
+    background: var(--color3);
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px var(--color2);
+}
+
+.product-table-selection-container::-webkit-scrollbar-thumb {
+    background: var(--color9);
+    border-radius: 10px;
+}
+
+.product-table-selection-container::-webkit-scrollbar-corner{
+    display: none;
+}
+
+/* botones de desplazamiento */
+.product-table-selection-container::-webkit-scrollbar-button{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-style: solid;
+}
+.product-table-selection-container::-webkit-scrollbar-button:vertical:single-button:increment{
+    border-width: 14px 7px 0 7px;
+    border-color: var(--color2) transparent transparent transparent;
+}
+
+.product-table-selection-container::-webkit-scrollbar-button:vertical:single-button:decrement{
+    border-width: 0 7px 14px 7px;
+    border-color: transparent transparent var(--color2) transparent;
+}
+.product-table-selection-container::-webkit-scrollbar-button:horizontal:single-button:increment{
+    border-width: 7px 0 7px 14px;
+    border-color: transparent transparent transparent var(--color2);
+}
+
+.product-table-selection-container::-webkit-scrollbar-button:horizontal:single-button:decrement{
+    border-width: 7px 14px 7px 0;
+    border-color: transparent var(--color2) transparent transparent;
+}
+
+/* Double button disable*/
+.product-table-selection-container::-webkit-scrollbar-button:vertical:start:increment,
+.product-table-selection-container::-webkit-scrollbar-button:vertical:end:decrement, 
+.product-table-selection-container::-webkit-scrollbar-button:horizontal:start:increment, 
+.product-table-selection-container::-webkit-scrollbar-button:horizontal:end:decrement {
+    display: none;
+}
+
+/* End scroll bar */
+
+.product-table-selection-container table{
+    width: 100%;
+    background-color: var(--color4);
+    height: 350px; /* para ver efecto scroll, ya que el div tiene 300px */
+    border-collapse: collapse;
+}
+
+
+
+.product-table-selection-container table thead{
+    position: sticky;
+    top:0;
+    background-color: var(--color1);
+    color:var(--color0);
+    height: 30px;
+}
+
+.product-table-selection-container table thead th{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.product-table-selection-container table tbody{
+    cursor:pointer;
+}
+
+.product-table-selection-container table tbody tr:nth-child(even){
+    background-color: var(--color3);
+}
+
+.product-table-selection-container table tbody tr td{
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.product-table-selection-container table tbody tr td:nth-child(2){
+    text-align: left;
+}
+
+
+
+
+
+
+/* Fin Formulario de seleccion de productos*/
+/*######################################*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Contenedor del formulario de contacto*/
 
 .contact-form-container{
