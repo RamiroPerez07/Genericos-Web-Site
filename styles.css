@@ -74,6 +74,10 @@ ul{
 
 /*Header of the page*/
 .main-header{
+    position: fixed;
+    top:0;
+    width: 90%;
+    z-index:6;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -83,6 +87,8 @@ ul{
     padding: 20px 65px;
     background-color: var(--color2);
     border-radius: 5px;
+    box-shadow: 1px 1px 5px 5px var(--color1);
+    transition: all 0.5s;
 }
 
 
@@ -141,10 +147,7 @@ ul{
     font-size: 0.9rem;
     cursor: pointer;
     display:none;
-}
-
-.menu-burguer-btn{
-    order:3;
+    order: 3;
 }
 
 .check-toggle{
@@ -217,7 +220,7 @@ ul{
 .main-info{
     width:100%;
     height:auto;
-    margin-top: 30px;
+    margin-top: 154px;
     margin-bottom: 30px;
     background-color: var(--color2);
     border-radius: 5px;
@@ -942,7 +945,7 @@ ul{
         height: 100%;
         top:0px;
         left: -100%;
-        transition: all .5s;
+        transition: all 0.5s;
         background-color: rgba(51, 50, 50,0.95);
     }
 
@@ -957,10 +960,17 @@ ul{
 
 
 
-    .check-toggle:checked ~ .nav-menu{
+    /* .check-toggle:checked ~ .nav-menu{
         left:0;
+    } */
+
+    .show{
+        left: 0;
     }
-    
+
+    .disguise{
+        left: -100%;
+    }
 
     .nav-logo{
         width: 100%;
